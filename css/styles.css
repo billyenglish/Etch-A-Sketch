@@ -22,10 +22,29 @@ body {
 /* Header Section */
 
 header {
-    padding: 1rem 0 2rem;
+    padding: 1rem 0 1rem;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    letter-spacing: .5rem;
 }
 
 /* Main Section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem 0;
+}
 
 #container {
     display: flex;
@@ -39,6 +58,10 @@ header {
     gap: 1rem;
 }
 
+#color-picker {
+    border: none;
+}
+
 #grid-container {
     height: 500px;
     width: 500px;
@@ -47,8 +70,30 @@ header {
     flex-wrap: wrap;
 }
 
-.grid-cell {
-    border: 1px solid black;
+#grid-container:hover {
+    cursor: pointer;
 }
 
 /* Footer Section */
+
+footer {
+    padding: 2rem 0 2rem;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+}
+
+footer i {
+    font-size: 1.75rem;
+    padding: 0 0.5rem;
+}
