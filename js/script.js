@@ -93,7 +93,7 @@ clearGrid.addEventListener("click", eraseGrid);
 function resizeGrid() {
     const gridSize = parseInt(inputRange.value);
     createGrid(gridSize, gridSize);
-    gridDisplay.innerHTML = `<p>${gridSize} x ${gridSize}</p>`
+    gridDisplay.innerHTML = `<p>Grid Size: ${gridSize} x ${gridSize}</p>`
 }
 
 inputRange.addEventListener("input", resizeGrid);
