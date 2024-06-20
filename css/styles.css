@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -17,21 +19,24 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: Cambay, Arial, Helvetica, sans-serif;
+    background-color: #262625;
 }
 
 /* Header Section */
 
 header {
     padding: 1rem 0 1rem;
-    width: 100%;
-    border: 1px solid black;
+    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1B4F72;
+    color: #D0D3D4;
 }
 
 header h1 {
     font-size: 2.5rem;
+    font-weight: 600;
     padding: 2rem 0;
     letter-spacing: .5rem;
 }
@@ -44,34 +49,59 @@ main {
     align-items: center;
     gap: 2rem;
     padding: 2.5rem 0;
+    padding-bottom: 5rem;
 }
 
 #container {
     display: flex;
-    gap: 4rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
+    padding-top: 3rem;
 }
 
 #control-panel {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
 #color-picker {
     border: none;
+    min-height: 2.5rem;
+    min-width: 10rem;
 }
 
 #grid-container {
-    height: 500px;
-    width: 500px;
-    border: 2px solid black;
+    height: 28rem;
+    width: 30rem;
+    border: .5rem solid black;
     display: flex;
     flex-wrap: wrap;
+    background-color: #FFF;
+    border-radius: .4rem;
 }
 
 #grid-container:hover {
     cursor: pointer;
+}
+
+button {
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding: .25rem;
+    border-radius: .5rem;
+    min-width: 10rem;
+    letter-spacing: .1rem;
+}
+
+#grid-display p {
+    text-align: center;
+    padding-top: 2rem;
+    color: #FFF;
+    font-size: 1.2rem;
 }
 
 /* Footer Section */
@@ -86,10 +116,13 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
+    background-color: #1B4F72;
+    color: #D0D3D4;
+
 }
 
 footer p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     letter-spacing: .2rem;
 }
 
