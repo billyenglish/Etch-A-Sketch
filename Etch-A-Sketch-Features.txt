@@ -1,0 +1,9 @@
+Etch-A-Sketch Features
+
+Light/Dark Mode
+Color Button
+Random Color Button
+Resize the Grid slider
+Clear Grid Button
+Toggle Grid Borders
+Erase Individual Grid Cells
