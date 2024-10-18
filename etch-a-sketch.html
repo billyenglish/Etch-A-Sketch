@@ -5,17 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
 </head>
 <body>
     <header>
         <h1 class="title">Etch-A-Sketch</h1>
     </header>
-    <main>
+    <main class="main">
+        <div>
+            <input type="color" name="" id="color-selector">
+            <input type="range" name="grid-range" id="grid-range">
+            <button type="button">Grid On</button>
+            <button type="button">Color</button>
+            <button type="button">Random Color</button>
+            <button type="button">Dark Mode</button>
+            <button type="button">Clear Grid</button>
+            <button type="button">Reset</button>
+        </div>
+
         <div class="sketch-container">
             <div class="etch-a-sketch"></div>
         </div>
     </main>
     <footer>
+        <p class="footer">Copyright &copy; Billy English<i class="ri-github-fill"></i></p>
     </footer>
     <script src="./js/script.js" defer></script>
 </body>
