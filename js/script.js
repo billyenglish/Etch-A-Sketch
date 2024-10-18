@@ -15,3 +15,13 @@ const createGrid = function (cols, rows) {
 }
 
 createGrid(16, 16);
+
+const gridCells = document.querySelectorAll(".cell");
+
+gridCells.forEach((cells) => {
+    cells.addEventListener("mouseover", () => {
+        cells.style.transition = "2s ease-in";
+        cells.style.backgroundColor = "black";
+    });
+})
+
