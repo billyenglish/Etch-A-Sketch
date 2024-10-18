@@ -18,10 +18,15 @@ createGrid(16, 16);
 
 const gridCells = document.querySelectorAll(".cell");
 
-gridCells.forEach((cells) => {
-    cells.addEventListener("mouseover", () => {
-        cells.style.transition = "2s ease-in";
-        cells.style.backgroundColor = "black";
+
+const defaultColor = function () {
+    gridCells.forEach((cells) => {
+        cells.addEventListener("mouseover", () => {
+            cells.style.transition = "2s ease-in";
+            cells.style.backgroundColor = "black";
+        });
     });
-})
+}
+
+defaultColor();
 
