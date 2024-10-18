@@ -32,9 +32,23 @@ Create user input to add color to the selected cell in the grid.
 Create user input to add random color to the selected cell in the grid.
 
 
-function createGrid() {
-    const 
+- Create Grid function
+- Create Grid Cells
+- Create Grid Borders for each cell.
+
+- Create Grid Effects the Etch A Sketch.
+- Hover over each of the grid cells with the default color being black.
+
+function defaultColor() {
+    cell.forEach((cells) => {
+        cells.style.backgroundColor = "black";
+        return;
+    });
 }
 
+
+
+- Create click event the adds color to the when selected.
+- When Adjusting the grid it should reflect the current range.
 
 
