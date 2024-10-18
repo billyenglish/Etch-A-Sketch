@@ -33,6 +33,8 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .etch-a-sketch {
@@ -44,6 +46,10 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.etch-a-sketch:hover {
+    cursor: pointer;
 }
 
 
