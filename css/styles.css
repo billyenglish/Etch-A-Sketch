@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Section */
+
+body {
+    min-width: 100%;
+}
+
+/* Header Section */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Section */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sketch-container {
+    border: 1px solid #000;
+    height: 35rem;
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .25rem;
+}
+
+.etch-a-sketch {
+    border: 1px solid #000;
+    height: 30rem;
+    width: 35rem;
+    border-radius: .25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Footer Section */

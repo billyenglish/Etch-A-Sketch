@@ -7,3 +7,29 @@ Resize the Grid slider
 Clear Grid Button
 Toggle Grid Borders
 Erase Individual Grid Cells
+
+// Light Dark Mode Features
+
+It toggle of the background color with the text color.
+It takes user input to select your particular color.
+It generates a random color.
+It resizes the grid size.
+It clears the grid completely.
+It toggles the borders of the cells of the grids on and off.
+
+Create Grid
+
+Create the Grid First!
+
+const main = document.querySelector("main");
+
+function createGrid(parms, parms) {
+    let createElement = document.
+    
+    for (let cell = 0; cell < cellSize * cellSize; cell++) {
+        const createElement = document.createElement("div);
+        createElement.setAttribute("cell");
+    }
+
+    return main.appen
+}
