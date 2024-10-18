@@ -19,17 +19,22 @@ It toggles the borders of the cells of the grids on and off.
 
 Create Grid
 
-Create the Grid First!
+The Default Grid should be 16 x 16 = 256 cells.
 
-const main = document.querySelector("main");
+Create A border outline for each of the cells of the grid.
 
-function createGrid(parms, parms) {
-    let createElement = document.
-    
-    for (let cell = 0; cell < cellSize * cellSize; cell++) {
-        const createElement = document.createElement("div);
-        createElement.setAttribute("cell");
-    }
+The border of each of the grid cell should be able to be toggle on and off.
 
-    return main.appen
+Create user input to adjust size of the grid min: 1 to max: 100.
+
+Create user input to add color to the selected cell in the grid.
+
+Create user input to add random color to the selected cell in the grid.
+
+
+function createGrid() {
+    const 
 }
+
+
+
