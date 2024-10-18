@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+*:focus {
+    outline: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +13,7 @@
 /* Body Section */
 
 body {
+    font-family: "Sixtyfour Convergence", Arial, Helvetica, sans-serif;
     min-width: 100%;
 }
 
@@ -15,6 +22,13 @@ body {
 header {
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
+    padding: 3rem 0 1rem 0;
+}
+
+.title {
+    font-size: 3rem;
+    color: #000;
 }
 
 /* Main Section */
@@ -23,6 +37,15 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.main {
+    display: flex;
+    gap: 2rem;
+}
+
+#color-selector {
+    
 }
 
 .sketch-container {
@@ -35,6 +58,9 @@ main {
     border-radius: .25rem;
     display: flex;
     flex-direction: column;
+    margin-top: 6rem;
+    background-color: rgb(253, 0, 0);
+    border: .25rem solid #FFF;
 }
 
 .etch-a-sketch {
@@ -46,6 +72,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background-color: rgb(255, 255, 255);
 }
 
 .etch-a-sketch:hover {
@@ -54,3 +81,23 @@ main {
 
 
 /* Footer Section */
+
+footer {
+    outline: 1px solid #000;
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.footer i {
+    font-size: 2rem;
+}
