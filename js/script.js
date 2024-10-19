@@ -3,8 +3,8 @@ const createGrid = function (cols, rows) {
 
     for (let cell = 0; cell < cols * rows; cell++) {
         const createCell = document.createElement("div");
-        createCell.setAttribute("class", "cell");
-        createCell.style.border = "1px solid black";
+        createCell.setAttribute("class", "cell active");
+        createCell.style.border = ".1rem solid black";
         createCell.style.height = `calc(100% / ${cols})`;
         createCell.style.width = `calc(100% / ${rows})`;
         gridContainer.appendChild(createCell);
@@ -17,6 +17,7 @@ const createGrid = function (cols, rows) {
 createGrid(16, 16);
 
 const gridCells = document.querySelectorAll(".cell");
+const gridButton = document.querySelector("#grid-button");
 
 
 const defaultColor = function () {
@@ -31,3 +32,10 @@ const defaultColor = function () {
 
 defaultColor();
 
+gridButton.addEventListener("click", () => {
+    gridCells.forEach((cells) => {
+        cells.style.border !== ""
+            ? (gridButton.textContent = 'Grid Off', cells.style.border = "")
+            : (gridButton.textContent = 'Grid On', cells.style.border = ".1rem solid #000");      
+    })
+});
