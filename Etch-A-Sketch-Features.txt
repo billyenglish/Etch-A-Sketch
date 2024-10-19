@@ -46,9 +46,16 @@ function defaultColor() {
     });
 }
 
-
-
 - Create click event the adds color to the when selected.
 - When Adjusting the grid it should reflect the current range.
+
+function toggleGrid() {
+    toggle.className('active)
+}
+
+Get grid cell element use a conditional statement toggle the grid cells.
+
+One thing to consider is that you would have to use the forEach loop because
+of the class attribute.
 
 
