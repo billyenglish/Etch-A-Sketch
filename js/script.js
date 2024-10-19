@@ -23,6 +23,7 @@ const defaultColor = function () {
     gridCells.forEach((cells) => {
         cells.addEventListener("mouseover", () => {
             cells.style.transition = "2s ease-in";
+            cells.style.scale = "1.1";
             cells.style.backgroundColor = "black";
         });
     });
