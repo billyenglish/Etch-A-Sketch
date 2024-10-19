@@ -17,15 +17,18 @@
     <main class="main">
         <div class="etch-container">
             <div class="control-panel">
-                <input type="color" name="" id="color-selector">
+                <div class="colors">
+                    <input type="color" name="color-selector" id="color-selector">
+                    <h2 class="select-color">Select Color</h2>
+                </div>
                 <div class="grid-container">
-                    <p>Grid Size: <span class="grid-size">16 X 16</span></p>
+                    <h2 class="grid-size">Grid Size: <span class="grid-size">16 X 16</span></h2>
                     <input type="range" name="grid-range" id="grid-range">
                 </div>
                 <div class="button-container">
-                    <button type="button">Grid On</button>
-                    <button type="button">Color</button>
-                    <button type="button">Random Color</button>
+                    <button type="button" id="grid-button">Grid On</button>
+                    <button type="button" id="grid-color">Color</button>
+                    <button type="button" id>Random Color</button>
                     <button type="button">Dark Mode</button>
                     <button type="button">Clear Grid</button>
                     <button type="button">Reset</button>
