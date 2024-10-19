@@ -15,19 +15,26 @@
         <h1 class="title">Etch-A-Sketch</h1>
     </header>
     <main class="main">
-        <div>
-            <input type="color" name="" id="color-selector">
-            <input type="range" name="grid-range" id="grid-range">
-            <button type="button">Grid On</button>
-            <button type="button">Color</button>
-            <button type="button">Random Color</button>
-            <button type="button">Dark Mode</button>
-            <button type="button">Clear Grid</button>
-            <button type="button">Reset</button>
-        </div>
+        <div class="etch-container">
+            <div class="control-panel">
+                <input type="color" name="" id="color-selector">
+                <div class="grid-container">
+                    <p>Grid Size: <span class="grid-size">16 X 16</span></p>
+                    <input type="range" name="grid-range" id="grid-range">
+                </div>
+                <div class="button-container">
+                    <button type="button">Grid On</button>
+                    <button type="button">Color</button>
+                    <button type="button">Random Color</button>
+                    <button type="button">Dark Mode</button>
+                    <button type="button">Clear Grid</button>
+                    <button type="button">Reset</button>
+                </div>
+            </div>
 
-        <div class="sketch-container">
-            <div class="etch-a-sketch"></div>
+            <div class="sketch-container">
+                <div class="etch-a-sketch"></div>
+            </div>
         </div>
     </main>
     <footer>
