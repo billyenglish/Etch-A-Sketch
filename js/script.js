@@ -1,3 +1,5 @@
+// Create Initial Grid Size
+
 const createGrid = function(cols, rows) {
     let gridContainer = document.querySelector(".etch-a-sketch");
     gridContainer.innerHTML = "";
@@ -17,6 +19,8 @@ const createGrid = function(cols, rows) {
 
 createGrid(16, 16);
 
+// DOM variables for Structures and Buttons
+
 const colorSelect = document.querySelector("#color-selector");
 const gridSlider = document.querySelector("#grid-range");
 const gridButton = document.querySelector("#grid-button");
@@ -26,6 +30,8 @@ const darkMode = document.querySelector("#dark-mode");
 const clearGrid = document.querySelector("#clear-grid");
 const resetGrid = document.querySelector("#reset-grid");
 const gridSizeDisplay = document.querySelector('.grid-size');
+
+// Grid Default Color Black
 
 const defaultColor = function() {
     const gridCells = document.querySelectorAll('.cell');
@@ -40,6 +46,8 @@ const defaultColor = function() {
 
 defaultColor();
 
+// Grid Color Selected.
+
 const selectColor = function() {
     const gridCells = document.querySelectorAll(".cell");
 
@@ -52,7 +60,10 @@ const selectColor = function() {
 
 gridColor.addEventListener("click", selectColor);
 
-randomColor.addEventListener("click", () => {
+// Grid Creates Random Color
+
+const displayRandomColor = function () {
+
     const randomPalette = "0123456789ABCDEF";
     let genRandomColor = "#";
 
@@ -69,7 +80,11 @@ randomColor.addEventListener("click", () => {
             cell.style.backgroundColor = genRandomColor;
         });
     });
-});
+}
+
+randomColor.addEventListener("click", displayRandomColor);
+
+// Generates Grid Size.
 
 const gridSize = function() {
     const gridSize = gridSlider.value;
@@ -80,6 +95,8 @@ const gridSize = function() {
 
 gridSlider.addEventListener("input", gridSize);
 
+// Grid Toggle Borders
+
 const toggleGrid = function() {
     const gridCells = document.querySelectorAll(".cell");
 
@@ -87,6 +104,26 @@ const toggleGrid = function() {
         cells.style.border ? cells.style.border = "" : cells.style.border = "1px solid black";
     })
 }
+
+// Dark Mode Display
+
+darkMode.addEventListener("click", () => {
+    alert("Dark Mode");
+})
+
+// Clear Grid Display
+
+function clearGridDisplay() {
+    const gridCells = document.querySelectorAll(".cell");
+
+    gridCells.forEach((cells) => {
+        cells.style.backgroundColor = "";
+    })
+}
+
+clearGrid.addEventListener("click", clearGridDisplay);
+
+// Grid Reset Size and Clear Grid Cells
 
 gridButton.addEventListener("click", toggleGrid);
 
