@@ -69,6 +69,11 @@ input[type=color] {
     width: 8rem;
 }
 
+.select-color {
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+}
+
 .select-color, .grid-size {
     font-size: 1rem;
     font-weight: 500;
