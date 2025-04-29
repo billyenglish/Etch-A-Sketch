@@ -28,16 +28,17 @@ header {
 
 /* Main Section */
 
-
 .etch-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    margin: 0 2rem;
 }
 
 .control-panel {
     border: .1rem solid #000;
+    border-radius: .25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,7 +125,7 @@ button:hover {
     border-radius: .25rem;
     display: flex;
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 2rem;
     background-color: rgb(253, 0, 0);
     border: .25rem solid #FFF;
     border-radius: .5rem;
@@ -150,9 +151,6 @@ button:hover {
 /* Footer Section */
 
 footer {
-    position: absolute;
-    bottom: 0;
-    min-width: 100%;
     display: flex;
     justify-content: center;
     padding: 1.5rem;
@@ -166,4 +164,28 @@ p {
 
 .footer i {
     font-size: 2rem;
+}
+
+@media (min-width:601px) and (max-width: 1024px) {
+
+    .etch-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: .25rem;
+    }
+
+    .control-panel {
+        display: flex;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        border-radius: .25rem;
+        justify-content: center;
+        width: 100%;
+    }
+
 }
