@@ -19,21 +19,25 @@ header {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    padding: 3rem 0 1rem 0;
+    padding: 2rem 0 0 0;
 }
 
 .title {
     font-size: 3rem;
+    text-align: center;
 }
 
 /* Main Section */
+main {
+    height: 100%;
+}
 
 .etch-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    margin: 0 2rem;
+    margin-top: 3rem;
 }
 
 .control-panel {
@@ -154,6 +158,10 @@ footer {
     display: flex;
     justify-content: center;
     padding: 1.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 p {
@@ -167,6 +175,10 @@ p {
 }
 
 @media (min-width:601px) and (max-width: 1024px) {
+
+    main {
+        padding-bottom: 0 1rem;
+    }
 
     .etch-container {
         display: flex;
@@ -186,6 +198,10 @@ p {
         border-radius: .25rem;
         justify-content: center;
         width: 100%;
+    }
+
+    footer {
+        position:static;
     }
 
 }
